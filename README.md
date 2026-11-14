@@ -16,13 +16,13 @@ The prepared data was then **connected to Power BI** to develop a **three-page e
 
 ## 🎯 Business Objectives
 
-- Analyze customer demographics across age groups, gender, and countries.
-- Evaluate revenue contribution across different subscription types.
-- Understand customer distribution across devices.
-- Compare average revenue per user across customer segments.
-- Identify high-performing geographic markets.
-- Monitor monthly user growth and revenue trends.
-- Generate actionable business insights from customer and subscription data.
+- Analyze **customer demographics** across age groups, gender, and countries.
+- Evaluate **revenue contribution** across different subscription types.
+- Understand **customer distribution** across devices.
+- Compare **average revenue per user** across customer segments.
+- Identify **high-performing geographic markets**.
+- Monitor monthly **user growth** and **revenue trends**.
+- Generate **actionable business insights** from customer and subscription data.
 
 ## 🛠️ Tools & Technologies
 
@@ -104,18 +104,6 @@ Key analysis areas:
 - Subscription type distribution across age groups.
 
 ### 3. 💡 Strategic Insights & Recommendations
-
-Consolidates the analytical findings into business insights and potential actions.
-
-Key areas covered:
-
-- Customer segment performance.
-- Geographic revenue contribution.
-- Subscription-level revenue patterns.
-- Device usage and revenue distribution.
-- Customer growth trends.
-- Retention and market expansion opportunities.
-- Subscription upgrade opportunities.
 
 ## 💡 Key Findings
 
