@@ -1,194 +1,193 @@
-# Netflix-Project
+# 🎬 Netflix User Analytics Dashboard
 
-# Netflix User Analytics Dashboard
+**Tools:** MySQL | Excel | Power BI | DAX
 
-## Project Overview
+An end-to-end data analytics project focused on analyzing Netflix user demographics, subscription preferences, revenue performance, geographic distribution, and customer growth through an interactive Power BI dashboard.
 
-This project demonstrates the development of an end-to-end analytics solution using **MySQL, SQL, Power BI, and DAX** to analyze Netflix user behavior, subscription trends, revenue performance, customer demographics, and geographic distribution.
+## 📌 Project Overview
 
-The solution follows a structured analytics workflow, starting from data ingestion and validation, progressing through database design and modeling, and culminating in an interactive executive dashboard with actionable business recommendations.
+This project involves analyzing **2,500+ Netflix customer records** to understand user behavior, subscription patterns, and revenue distribution across different customer segments.
 
----
+The project follows an **end-to-end analytics workflow**, starting with raw data preparation and MySQL **data warehousing**, followed by **ETL**, **data validation, relational data modelling**, and **interactive dashboard development** in Power BI.
 
-## Project Objectives
+A structured data warehouse was designed in MySQL, consisting of a **staging layer** and a **star-schema relational database** with **1 fact table and 4 dimension tables**.
 
-- Analyze customer demographics and subscription behavior.
-- Identify top-performing countries and revenue-generating segments.
-- Evaluate device usage patterns and customer engagement.
-- Monitor user growth and revenue trends over time.
-- Generate business insights and strategic recommendations.
+The prepared data was then **connected to Power BI** to develop a **three-page executive dashboard** containing **15+ KPIs**, helping translate customer and revenue **data into meaningful business insights**.
 
----
+## 🎯 Business Objectives
 
-## Dataset Information
+- Analyze customer demographics across age groups, gender, and countries.
+- Evaluate revenue contribution across different subscription types.
+- Understand customer distribution across devices.
+- Compare average revenue per user across customer segments.
+- Identify high-performing geographic markets.
+- Monitor monthly user growth and revenue trends.
+- Generate actionable business insights from customer and subscription data.
 
-- **Total Records:** 2,500+ Netflix Users
-- **Data Scope:** Customer demographics, subscriptions, revenue, devices, countries, and activity dates.
+## 🛠️ Tools & Technologies
 
----
+- **MySQL** – Database creation, staging tables, relational data modelling, SQL transformations, and data validation.
+- **Microsoft Excel** – Initial data inspection and preparation.
+- **Power BI** – Interactive dashboard development and data visualization.
+- **DAX** – KPI calculations, analytical measures, and business metrics.
+- **Power Query** – Data preparation and transformation.
+- **Star Schema** – Organizing data into fact and dimension tables for analytical reporting.
 
-## Data Architecture
+## 🏗️ Data Architecture & Modelling
 
-The project was designed using a simple data warehouse architecture consisting of:
+The project follows a structured data warehousing approach.
 
-### Staging Layer
-- Raw data ingestion
-- Data transformation preparation
-- Data quality assessment
+**1. Staging Layer**
 
-### Relational Database Layer
-A star-schema database was implemented in **MySQL** consisting of:
+- Created staging tables in MySQL to load the raw dataset.
+- Organized the source data for subsequent transformation and processing.
 
-#### Fact Table
-- `netflix_user_base`
+**2. Data Warehouse Development**
 
-#### Dimension Tables
-- `country_table`
-- `subscription_table`
-- `gender_table`
-- `device_table`
+- Designed a relational database using a star-schema structure.
+- Created one fact table and four dimension tables.
+- Established primary key and foreign key relationships to maintain data integrity.
 
-The model was designed using **Primary Keys** and **Foreign Keys** to maintain referential integrity.
+**3. ETL & Data Transformation**
 
----
+- Extracted data from the staging layer.
+- Performed necessary cleaning and transformations.
+- Loaded the processed data into the analytical data warehouse.
 
-## ETL & Data Preparation
+**4. Power BI Data Modelling**
 
-The following ETL activities were performed:
+- Connected the prepared data to Power BI.
+- Established relationships between the fact and dimension tables.
+- Developed analytical measures using DAX.
 
-- Data import from raw source files
-- Date standardization using SQL transformations
-- Loading data into a relational database
-- Creation of fact and dimension tables
-- Establishment of primary and foreign key relationships
+## 🔍 Data Quality & Validation
 
----
+To ensure the reliability of the analytical results, several business validation checks were performed:
 
-## Data Validation & Quality Checks
+- **Revenue Reconciliation:** Verified revenue calculations against the underlying customer data.
+- **Duplicate Detection:** Checked for duplicate customer records.
+- **Null-Value Assessment:** Examined missing values across relevant columns.
+- **Date Consistency:** Validated date fields and checked their consistency.
+- **Data Integrity:** Reviewed relationships and key fields across the relational tables.
 
-To ensure reliable analytical reporting, the following validation checks were performed:
+## 📊 Dashboard & Analysis
 
-### Record Count Validation
-Verified successful data loading from staging to relational tables.
+The project includes a **three-page interactive Power BI dashboard** with 15+ KPIs.
 
-### Null Value Assessment
-Checked all critical business columns for missing values.
+### 1. 📈 Executive Performance Overview
 
-### Duplicate Detection
-Validated uniqueness of user records.
+Provides a high-level view of overall Netflix customer and revenue performance.
 
-### Revenue Validation
-Reviewed minimum, maximum, and average revenue values.
+Key analysis areas:
 
-### Revenue Reconciliation
-Compared source and target revenue totals to ensure loading accuracy.
+- Total users and total revenue.
+- Average revenue per user.
+- Total countries and average user age.
+- Top five countries by revenue.
+- Revenue by subscription type.
+- Revenue by device.
+- Monthly user growth.
+- Geographic distribution of users.
 
-### Age Validation
-Validated customer age ranges against business rules.
+### 2. 👥 Customer Demographics Overview
 
-### Date Consistency Validation
-Ensured Last Payment Date (LMP) was not earlier than Join Date.
+Explores customer characteristics and revenue distribution across different segments.
 
----
+Key analysis areas:
 
-## Power BI Dashboard
+- Total users by age group.
+- Total revenue by gender.
+- User distribution by gender.
+- Total revenue by age group.
+- Average revenue per user by subscription type.
+- Average revenue per user by device type.
+- Subscription type distribution across age groups.
 
-A **3-page executive dashboard** was developed containing **15+ KPIs and visualizations**.
+### 3. 💡 Strategic Insights & Recommendations
 
-### Page 1: Executive Performance Overview
+Consolidates the analytical findings into business insights and potential actions.
 
-**KPIs**
-- Total Users
-- Total Revenue
-- Average Revenue Per User
-- Total Countries
-- Average User Age
+Key areas covered:
 
-**Analysis**
-- Top Countries by Revenue
-- Revenue by Subscription Type
-- Revenue by Device
-- Monthly User Growth
-- Monthly Revenue Trend
-- Geographic User Distribution
+- Customer segment performance.
+- Geographic revenue contribution.
+- Subscription-level revenue patterns.
+- Device usage and revenue distribution.
+- Customer growth trends.
+- Retention and market expansion opportunities.
+- Subscription upgrade opportunities.
 
----
+## 💡 Key Findings
 
-### Page 2: Customer Demographics Overview
+- **Customer Base:** Analyzed 2,500 users across 10 countries.
+- **Revenue Performance:** Total revenue reached approximately 31.27K, with an average revenue per user of 12.51.
+- **Geographic Performance:** The United States and Spain were the largest revenue-contributing markets.
+- **Customer Demographics:** The 35–44 age group represented the largest customer segment, with 1,015 users.
+- **Subscription Analysis:** The Basic subscription plan generated the highest total revenue among the three subscription types.
+- **Device Analysis:** Revenue contribution was relatively balanced across devices, with laptops contributing slightly more.
+- **Growth Trends:** Monthly user growth and revenue peaked during the middle-to-late part of the observed period, followed by a decline.
 
-**KPIs**
-- Total Users
-- Total Revenue
-- Average Customer Tenure
-- Average User Age
+## 💼 Business Recommendations
 
-**Analysis**
-- Users by Age Group
-- Revenue by Age Group
-- Users by Gender
-- Revenue by Gender
-- Subscription Mix Across Age Groups
-- Average Revenue Per User by Subscription Type
-- Average Revenue Per User by Device Type
+Based on the analysis, the dashboard highlights several potential business opportunities:
 
----
+- **Focus on High-Value Customer Segments:** Develop targeted engagement and retention strategies for the 35–44 age group.
+- **Expand High-Performing Markets:** Explore opportunities to strengthen performance in leading revenue-contributing countries.
+- **Subscription Upgrade Opportunities:** Evaluate targeted promotions to encourage Basic plan users to explore higher-tier subscriptions.
+- **Optimize Multi-Device Experience:** Continue improving the user experience across laptops, tablets, smartphones, and smart TVs.
+- **Monitor Growth Trends:** Investigate periods of declining user growth and revenue to identify potential improvement opportunities.
+- **Personalize Content Strategy:** Use customer demographic patterns to inform more targeted content and engagement strategies.
 
-### Page 3: Strategic Insights & Recommendations
+## 📁 Repository Structure
 
-The dashboard concludes with business findings and recommendations generated from analytical observations.
+```text
+Netflix-User-Analytics-Dashboard/
+│
+├── 📂 SQL_Scripts/
+│   ├── 01_netflix_Staging_Tables and data_loading.sql
+│   ├── 02_netflix_Relational_database and ETL_transformations.sql
+│   ├── 03_netflix_db_data_validation.sql
+│
+├── 📂 PowerBI/
+│   └── Netflix_Analytics_Dashboard.pbix
+│
+├── 📂 Screenshots/
+│   ├── Executive_Performance_Overview.png
+│   ├── Customer_Demographics_Overview.png
+│   ├── Strategic_key_Insights.png
+│   └── Strategic_Recommendations.png
+│
+├── 📂 Data_Model/
+│   └── PowerBI_Data_Model.png
+│
+├── 📂 Documentation/
+│   └── Project_Workflow.png
+│
+└── README.md
+```
 
-Key focus areas include:
+*Note: Update the filenames and folders to match the actual files uploaded to this repository.*
 
-- High-performing revenue markets
-- Most valuable customer segments
-- Subscription performance evaluation
-- Device usage optimization
-- Growth trend monitoring
-- Customer retention opportunities
+## 🎓 Skills Demonstrated
 
----
-
-## Key Insights
-
-- United States and Spain emerged as the largest revenue-contributing markets.
-- Users aged 35–44 represented the largest customer segment and generated the highest revenue contribution.
-- Basic Plan generated the highest overall revenue among subscription tiers.
-- Revenue contribution was relatively balanced across gender groups.
-- Device revenue contribution was distributed evenly, indicating multi-device engagement across the platform.
-- User growth peaked during mid-to-late 2022 before slowing in subsequent months.
-
----
-
-## Tools & Technologies
-
-- MySQL
-- SQL
-- Power BI
-- DAX
-- Data Modeling
-- ETL
-- Data Validation
-- Dashboard Design
-- KPI Development
-- Business Analytics
-- Data Visualization
-
----
-
-## Skills Demonstrated
-
-- Relational Database Design
-- Star Schema Modeling
-- Data Warehouse Fundamentals
-- SQL Data Transformation
+- SQL & MySQL Database Development
+- Data Warehousing
+- Staging Layer Design
+- ETL & Data Transformation
+- Star Schema Data Modelling
+- Data Quality Assessment
 - Data Validation & Reconciliation
-- Power BI Dashboard Development
-- DAX Measure Creation
+- Power BI Data Modelling
+- DAX & KPI Development
+- Customer Analytics
+- Revenue & Subscription Analysis
+- Interactive Dashboard Development
 - Business Insight Generation
-- Executive Reporting
 
----
+## 👤 Author
 
-## Outcome
+**Hariom Tomar**
 
-Built a complete analytics solution by transforming **2,500+ Netflix customer records** into an interactive executive reporting system capable of monitoring revenue performance, customer demographics, subscription behavior, geographic distribution, and growth trends while generating actionable business recommendations.
+Data Analyst | SQL | Power BI | Excel | Tableau
+
+🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/hariom-tomar-b2021b19b/)
