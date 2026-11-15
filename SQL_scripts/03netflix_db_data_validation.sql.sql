@@ -1,3 +1,5 @@
+# Performing business validation checks 
+
 # RECORD COUNT VALIDATION
 
 SELECT(
