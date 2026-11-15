@@ -1,3 +1,5 @@
+# Creating staged database and loading data 
+
 CREATE DATABASE netflix_staged;
 
 USE netflix_staged;
